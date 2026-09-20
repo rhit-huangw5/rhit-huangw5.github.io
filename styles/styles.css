@@ -1,0 +1,182 @@
+#self-img{
+    height: 200px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#self{
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column; /* vertical */
+    align-items: center; 
+    vertical-align: top;
+    width: 42%;
+    box-sizing: border-box;
+}
+
+
+#poetry{
+    display: inline-flex;
+    vertical-align: top;
+    writing-mode: vertical-rl; /* src: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/writing-mode */
+    height: 250px;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 25px;
+    color: #3f2a1d;
+    width: auto;
+    padding: 24px 18px;
+    box-sizing: border-box;
+    background: #f3e3bd;
+    border: 1px solid #b89562;
+    box-shadow: 2px 3px 8px rgba(75, 48, 24, .25);
+    background-image: rgba(255,255,255,.12);
+}
+
+body{
+    background-color: #e7d3a8;
+    color: #3f2a1d;
+    font-family: "KaiTi", "STKaiti", serif;
+    margin: 0;
+}
+
+#site-header{
+    height: 60px;
+}
+
+main{
+    padding: 20px;
+}
+
+.site-nav{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    background-color: #f3e3bd;
+    border-bottom: 1px solid #b89562;
+}
+
+.site-nav a{
+    margin-right: 24px;
+    color: #3f2a1d;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+a:visited{
+    color: #6b356f;
+}
+
+#site-footer{
+    margin-top: 30px;
+    padding: 16px 20px;
+    text-align: center;
+    background-color: #f3e3bd;
+    border-top: 1px solid #b89562;
+}
+
+#details-toggle{
+    display: block;
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    color: #f9f1df;
+    background-color: #3f2a1d;
+    border: 1px solid #3f2a1d;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#about{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.skills-section{
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    width:30%;
+}
+
+/* .skills-section ul{
+    list-style-type:circle;
+    padding: 0;
+} */
+
+#programming-languages ul{
+    list-style-type:circle;
+    
+}
+
+#Interests ul{
+    list-style-type:square;
+}
+
+.skills-section h2{
+    font-size: 24px;
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.info h2{
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info span{
+    margin: 0;
+    text-align: right;
+}
+
+#Education, #Experience, #Skills p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.card{
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    margin:30px;
+    width:calc(50% - 64px);
+    min-width:280px;
+    height:600px;
+    padding: 24px 18px;
+    box-sizing: border-box;
+    border: 1px solid #b89562;
+    box-shadow: 2px 3px 8px rgba(75, 48, 24, .25);
+    background-color: rgba(255, 255, 255, 0);
+    transition:  all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95); /* src: https://easings.net/#easeInOutCubic https://freefrontend.com/css-card-hover-effects/#google_vignette 
+    I use it to transform the card smoothly */
+}
+
+.card span{
+    display: block;
+    margin: 8px 0;
+    color: #6b3f20;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card:hover{
+    transform: translateY(-6px); 
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
