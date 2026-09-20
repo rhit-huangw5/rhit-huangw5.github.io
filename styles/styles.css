@@ -153,7 +153,7 @@ a:visited{
     margin:30px;
     width:calc(50% - 64px);
     min-width:280px;
-    height:600px;
+    height:700px;
     padding: 24px 18px;
     box-sizing: border-box;
     border: 1px solid #b89562;
@@ -177,6 +177,8 @@ a:visited{
 
 .card img{
     width: 100%;
-    height: auto;
+    box-sizing: border-box;
+    height: 300px;
+    object-fit: cover;
     border-radius: 5px;
 }
